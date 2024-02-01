@@ -1,0 +1,61 @@
+List of Refactorings
+====================
+
+Name/Banner# of Developer 1:
+Name/Banner# of Developer 2:
+
+Refactorings:
+=============
+
+1. Timbot.java - 2 magic numbers fix
+2. AngryBot.java - 1
+
+
+0. EXAMPLE:  
+   File: AngryBot.java
+   Location (method/approx. line #): getNextMove(), line 54
+   Issue Identified: Magic number
+   Description of fix:  Replaced with constant EMPTY_DISTRICT_PENALTY
+
+1. File: BullyBot.java
+   Location: fireCannon(), line 68
+   Issue Identified: Wrong Expression
+   Description of fix: Removed the check of i != District.CURRENT 
+
+2. File: ChickenBot.java
+   Location (method/approx. line #): getNextMove(), line 57
+   Issue Identified: Wrong Expression
+   Description of fix: Removed the check of the current Index != District.CURRENT
+
+3. File: AngryBot.java
+   Location (method/approx. line #): constructor, line 30
+   Issue Identified: Magic Number
+   Description of fix: Replaced the assignment of personality with a Constant
+
+4. File: BullyBot.java
+   Location (method/approx. line #): constructor, line 28
+   Issue Identified: Magic Number
+   Description of fix: Replaced the assignment of personality with a Constant
+
+5. File: DohNat.java
+   Location (method/approx. line #): Repetitive code of traversing the 2-D array again
+   Issue Identified: Repetitive Code
+   Description of fix: Added a new method and removed unnecessary methods by 1 method
+
+6. File: SpressoBot.java
+Location (method/approx. line #): constructor, line 28
+Issue Identified: Magic Number
+Description of fix: Replaced the assignment of personality with a Constant
+
+7. File: SpressoBot.java
+Location (method/approx. line #): getNextMove(), line 56
+Issue Identified: Wrong Expression
+Description of fix: Removed the unnecessary check of index with District.CURRENT
+
+8. File: BullyBot.java
+Location (method/approx. line #): fireCannon(), line 53
+Issue Identified: Redundant Code
+Description of fix: Added a variable to store energy level and used that variable instead of calculating the energy again and again
+
+
+
